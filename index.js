@@ -1,81 +1,112 @@
-function add(result, character) {
-	if(result.value == null || result.value == "0")
-		result.value = character
-    else if(result.value.length<15){
-        result.value += character    
+//get the userinput element
+var userinput = document.getElementById('userinput');
+
+//function for adding the user input
+function add(char) {
+    if (userinput.value == null || userinput.value == "0")
+        userinput.value = char
+    else if (userinput.value.length < 15) {
+        userinput.value += char
     }
-	
-	//	result.value += character
+
 }
-result=(text)=>{
-    var ans=eval(text.value);
-    document.getElementById('userinput').value=ans;
+
+//function for +,-,*,/,%
+result = () => {
+    var ans = eval(userinput.value);
+    userinput.value = ans;
 };
-allclear=()=>{
-    document.getElementById('userinput').value="0";
+
+//clear screen function
+allclear = () => {
+    userinput.value = "0";
 };
-clearchar=(txt)=>{
-    var ans=txt.value;
-    if(ans.length==1)
-    {
-        document.getElementById('userinput').value="0";
+
+//delete one char function
+clearchar = () => {
+    var ans = userinput.value;
+    if (ans.length == 1) {
+        userinput.value = "0";
     }
-    else{
-    document.getElementById('userinput').value=ans.slice(0,-1);
+    else {
+        userinput.value = ans.slice(0, -1);
     }
 };
-square=(text)=>{
-    var ans=text.value;
-    document.getElementById('userinput').value=ans*ans;
+
+//square function
+square = () => {
+    var ans = userinput.value;
+    userinput.value = ans * ans;
 };
-sqrt=(text)=>{
-  var ans=text.value;
-  document.getElementById('userinput').value=Math.sqrt(ans);
+
+//square root function
+sqrt = () => {
+    var ans = userinput.value;
+    userinput.value = Math.sqrt(ans);
 };
-ten=(text)=>{
-    var ans=text.value;
-    document.getElementById('userinput').value=Math.pow(10,ans);
+
+//10^x function
+ten = () => {
+    var ans = userinput.value;
+    userinput.value = Math.pow(10, ans);
 };
-log=(text)=>{
-    var ans=text.value;
-    document.getElementById('userinput').value=Math.log10(ans);
+
+//log function
+log = () => {
+    var ans = userinput.value;
+    userinput.value = Math.log10(ans);
 };
-ln=(text)=>{
-    var ans=text.value;
-    document.getElementById('userinput').value=Math.log(ans);
+
+//ln function
+ln = () => {
+    var ans = userinput.value;
+    userinput.value = Math.log(ans);
 };
-invdiv=(text)=>{
-    var ans=text.value;
-    document.getElementById('userinput').value=1/ans;
+
+//1/x function
+invdiv = () => {
+    var ans = userinput.value;
+    userinput.value = 1 / ans;
 };
-fact=(text)=>{
-    var ans=text.value;
-    var factvalue=1;
-    for(var i=1;i<=ans;i++)
-    {
-        factvalue*=i;
+
+//factorial function
+fact = () => {
+    var ans = userinput.value;
+    var factvalue = 1;
+    for (var i = 1; i <= ans; i++) {
+        factvalue *= i;
     }
-    document.getElementById('userinput').value=factvalue;
+    userinput.value = factvalue;
 };
-abs=(text)=>{
-    var ans=text.value;
-    document.getElementById('userinput').value=Math.abs(ans);
+
+//Absolute function
+abs = () => {
+    var ans = userinput.value;
+    userinput.value = Math.abs(ans);
 };
-exp=(text)=>{
-    var ans=text.value;
-    document.getElementById('userinput').value=Math.pow(Math.E,ans);
+
+//Exp function
+exp = () => {
+    var ans = userinput.value;
+    userinput.value = Math.pow(Math.E, ans);
 };
-pie=()=>{
-    document.getElementById('userinput').value=Math.PI;
+
+//value of pie
+pie = () => {
+    userinput.value = Math.PI;
 };
-e=()=>{
-    document.getElementById('userinput').value=Math.E;
+
+//e function
+e = () => {
+    userinput.value = Math.E;
 }
-plusmin=(input) =>{
-	if(input.value.substring(0, 1) == "-")
-		input.value = input.value.substring(1, input.value.length)
-	else
-		input.value = "-" + input.value
+
+//+,- function
+plusmin = () => {
+    if (userinput.value.substring(0, 1) == "-")
+        userinput.value = userinput.value.substring(1, userinput.value.length)
+    else
+        userinput.value = "-" + userinput.value
 };
 
 
