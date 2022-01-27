@@ -111,112 +111,13 @@ plusmin = () => {
 
 sin=()=>{
     var ans=userinput.value;
-    userinput.value=Math.sin(ans);
+    userinput.value=Math.sin(ans * (Math.PI / 180));
 }
 cos=()=>{
     var ans=userinput.value;
-    userinput.value=Math.cos(ans);
+    userinput.value=Math.cos(ans * (Math.PI / 180));
 }
 tan=()=>{
     var ans=userinput.value;
-    userinput.value=Math.tan(ans);
+    userinput.value=Math.tan(ans * (Math.PI / 180));
 }
-
-/*
-function f0() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "0";
-    }
-    else {
-        document.getElementById("userinput").value = result + "0";
-    }
-}
-function f1() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "1";
-    }
-    else {
-        document.getElementById("userinput").value = result + "1";
-    }
-}
-function f2() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "2";
-    }
-    else {
-        document.getElementById("userinput").value = result + "2";
-    }
-}
-function f3() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "3";
-    }
-    else {
-        document.getElementById("userinput").value = result + "3";
-    }
-}
-function f4() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "4";
-    }
-    else {
-        document.getElementById("userinput").value = result + "4";
-    }
-}
-function f5() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "5";
-    }
-    else {
-        document.getElementById("userinput").value = result + "5";
-    }
-}
-function f6() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "6";
-    }
-    else {
-        document.getElementById("userinput").value = result + "6";
-    }
-}
-function f7() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "7";
-    }
-    else {
-        document.getElementById("userinput").value = result + "7";
-    }
-}
-function f8() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "8";
-    }
-    else {
-        document.getElementById("userinput").value = result + "8";
-    }
-}
-function f9() {
-    var result = document.getElementById("userinput").value;
-    if (result == "0") {
-        document.getElementById("userinput").value = "9";
-    }
-    else {
-        document.getElementById("userinput").value = result + "9";
-    }
-}
-plus=()=>{
-   var result = document.getElementById("userinput").value;
-  
-    document.getElementById("userinput").value = result + "+";
-   
-};
-*/
