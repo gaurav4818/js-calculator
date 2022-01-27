@@ -109,14 +109,19 @@ plusmin = () => {
         userinput.value = "-" + userinput.value
 };
 
+//sin function
 sin=()=>{
     var ans=userinput.value;
     userinput.value=Math.sin(ans * (Math.PI / 180));
 }
+
+//cos function
 cos=()=>{
     var ans=userinput.value;
     userinput.value=Math.cos(ans * (Math.PI / 180));
 }
+
+//tan function
 tan=()=>{
     var ans=userinput.value;
     userinput.value=Math.tan(ans * (Math.PI / 180));
