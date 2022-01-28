@@ -109,6 +109,42 @@ plusmin = () => {
         userinput.value = "-" + userinput.value
 };
 
+var m=0;
+
+//ms function
+ms=()=>{
+     var ans=userinput.value;
+     m=eval(ans);
+     userinput.value=m;
+}
+
+//mc function
+mc=()=>{
+    m="0";
+    userinput.value=m;
+}
+
+//mr function
+mr=()=>{
+    var ans=userinput.value;
+    ans=m;
+    userinput.value=ans;
+}
+
+//m+ function
+mplus=()=>{
+    var ans=userinput.value;
+    m+=eval(ans);
+    userinput.value=m;
+}
+
+//m- function
+mminus=()=>{
+    var ans=userinput.value;
+    m-=eval(ans);
+    userinput.value=m;
+}
+
 //sin function
 sin=()=>{
     var ans=userinput.value;
@@ -126,3 +162,4 @@ tan=()=>{
     var ans=userinput.value;
     userinput.value=Math.tan(ans * (Math.PI / 180));
 }
+
